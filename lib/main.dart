@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:m_eid_hsn/base/presentation/view/base_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,23 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: CircleAvatar(
-          radius: 200,
-          backgroundImage: Image.asset('assets/images/profile.jpg').image,
-        ),
-      ),
+      home: const BaseView(),
     );
   }
 }
